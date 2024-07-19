@@ -22,6 +22,7 @@
 		action="/projects"
 		method="post"
 		use:enhance={formResetAction}
+		hidden
 	>
 		<input name="text" aria-label="Add project" placeholder="+ tap to add a project" />
 	</form>
