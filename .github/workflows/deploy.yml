@@ -32,6 +32,17 @@ jobs:
         run: |
           npm run build
 
+      - name: rename _app to assets
+        run: |
+          mv build/_app build/assets
+          list_files=($(find build/ -type f))
+          from="_app"
+          to="assets"
+          for file in ${list_files[@]}; do sed -i "s/$from/$to/g" $file; done
+          cp CNAME build/
+          echo "======= rename _app to assets (DONE) ======="
+          ls -l build/
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
