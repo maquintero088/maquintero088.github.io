@@ -19,6 +19,9 @@
 		<ul>
 			<li class:active={$page.url.pathname === '/'}>
 				<a data-sveltekit-reload href="/">About me</a></li>
+			<li class:active={$page.url.pathname === '/purpose'}>
+				<a data-sveltekit-reload href="purpose">Purpose</a>
+			</li>
 			<li class:active={$page.url.pathname === '/projects'}>
 				<a data-sveltekit-reload href="projects">My Projects</a>
 			</li>

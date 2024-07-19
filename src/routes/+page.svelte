@@ -11,24 +11,19 @@
 	<h2>
 		Fullstack Developer & Software Engineer
 	</h2>
-
+	<p>
+		Jóven emprendedor con la motivación y el compromiso de diseñar aplicaciones web y móviles para el beneficio de sectores de innovación.
+	</p>
 	<!--<Counter />-->
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
 
 	h1 {
-		color: #edf0f8;
-		text-shadow: 1px 1px 6px #0006;
 		width: 100%;
+		margin-bottom: 0;
 	}
+
 	h2{
 		color: white;
 		font-size: x-large;
@@ -50,5 +45,6 @@
 		height: 100%;
 		top: 0;
 		display: block;
+			filter: drop-shadow(1px 1px 6px var(--shadow-six));
 	}
 </style>
